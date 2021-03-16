@@ -1,0 +1,225 @@
+/* @font-face and @ import below used to use StarWars site font */
+@font-face {
+  font-family: "DINNextW01-Regular";
+  src: url("//db.onlinewebfonts.com/t/1daa609fdca8da38e5bcbb12c2a987db.eot");
+  src: url("//db.onlinewebfonts.com/t/1daa609fdca8da38e5bcbb12c2a987db.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1daa609fdca8da38e5bcbb12c2a987db.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1daa609fdca8da38e5bcbb12c2a987db.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1daa609fdca8da38e5bcbb12c2a987db.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1daa609fdca8da38e5bcbb12c2a987db.svg#DINNextW01-Regular")
+      format("svg");
+}
+ 
+@import url(//db.onlinewebfonts.com/c/1daa609fdca8da38e5bcbb12c2a987db?family=DINNextW01-Regular);
+
+/*  Header Styling*/
+#header {
+  width: 100%;
+  height: 167px;
+  background-color: #000;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  /*border: 2px solid yellow;*/
+  color: white;
+}
+/* Navigation styling. Had issues trying to get this to fit under the logo */
+.nav {
+  justify-content: center;
+  letter-spacing: 1px;
+  height: 20px;
+  margin: 0;
+}
+
+.nav li {
+  list-style-type: none;
+}
+.nav li a {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  justify-content: space-evenly;
+}
+/* Logo styling. Made this clickable. Couldn't get the main nav links to fit underneath */
+.logo a {
+  display: block;
+  justify-content: center;
+  height: 110px;
+  width: 248px;
+  background: url(assets/starWarsLogo.png) no-repeat;
+}
+/* Search bar in the upper right */
+.searchbar {
+  color: rgb(170, 170, 170);
+  top: 20px;
+  right: 240px;
+  position: absolute;
+  width: 248px;
+  height: 40px;
+  padding: 2px;
+}
+.searchinput {
+  text-align: left;
+  background-color: black;
+}
+/* Sign up and Sign in links in upper right */
+.signup {
+  position: absolute;
+  display: inline;
+  right: 340px;
+  top: 60px;
+}
+.signup li {
+  color: rgb(170, 170, 170);
+  display: inline-block;
+  position: static;
+  font-size: 14px;
+
+  list-style-type: none;
+}
+.signup ul {
+  display: block;
+
+  justify-content: right;
+
+  top: 55px;
+}
+.signup a:link {
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+  padding: 6px;
+}
+/* Main content area */
+main {
+  background-color: #000;
+  border: 2px solid black;
+  font-family: "DIN Next W01 Regular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-image: url(https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_00cbf8a9.jpeg?region=0%2C0%2C2048%2C1600);
+}
+/*Big Leia image */
+#leia {
+  margin-top: 10em;
+  display: flex;
+  justify-content: center;
+  height: 627px;
+  width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Small boxes beneath Leia */
+.middle {
+  margin-top: -80px;
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.middle a {
+  color: white;
+  text-decoration: none;
+}
+.middleOne {
+  display: inline-flex;
+  justify-content: center;
+  height: 80px;
+  width: 200px;
+
+  margin-right: 14px;
+  background: url("https://lumiere-a.akamaihd.net/v1/images/twisw-0311-new-swcom-slide-desktop-_2_c5e59931.jpeg?region=0,0,2048,870&width=320")
+    no-repeat;
+}
+.middleTwo {
+  display: inline-flex;
+  justify-content: center;
+  height: 80px;
+  width: 200px;
+
+  margin-right: 14px;
+  background: url("https://lumiere-a.akamaihd.net/v1/images/which-leia-are-you-new-swcom-slide-desktop-_2_4092301d.jpeg?region=0,0,2048,870&width=320")
+    no-repeat;
+}
+.middleThree {
+  display: inline-flex;
+  justify-content: center;
+  height: 80px;
+  width: 200px;
+
+  margin-right: 14px;
+  background: url("https://lumiere-a.akamaihd.net/v1/images/thrawn-ascendancy-greater-good-new-swcom-slide-desktop-_0253380a.jpeg?region=0,0,2048,870&amp;width=320")
+    no-repeat;
+}
+.middleFour {
+  display: inline-flex;
+  justify-content: center;
+  height: 80px;
+  width: 200px;
+
+  background: url("https://lumiere-a.akamaihd.net/v1/images/iwd-2021-hero-desktop-c_badde14a.jpeg?region=0,0,2048,870&width=320")
+    no-repeat;
+}
+/* Huge pic below the small 4 boxes */
+.highRepublic {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 2em;
+  margin-bottom: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 70%;
+}
+/* Created this box using CSS since I couldn't grab it from the Staw Wars website */
+#colorbox {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(50, 88, 137);
+  background-image: -webkit-linear-gradient(
+    top,
+    rgb(50, 88, 137),
+    rgb(38, 67, 102)
+  );
+  height: 510px;
+  width: 70%;
+  margin-top: 0;
+}
+/*This logo area was tough to get on top of the High Republic image */
+.logo-title {
+  position: absolute;
+  top: 1100px;
+  right: 600px;
+}
+#era {
+  color: rgb(246, 246, 246);
+  position: absolute;
+  top: 1285px;
+  right: 770px;
+  font-size: 18px;
+  font: 800;
+  letter-spacing: 0.2px;
+}
+#explore button {
+  background-color: #daaf59;
+  color: black;
+  border-color: #daaf59;
+  height: 30px;
+  width: 130px;
+  position: absolute;
+  top: 1340px;
+  right: 810px;
+  font-size: 16px;
+  text-align: center;
+  margin: 8px 0px 7px 0px;
+  text-align: center;
+  text-decoration-line: none;
+  background: #daaf59;
+  border-radius: 4px;
+}
